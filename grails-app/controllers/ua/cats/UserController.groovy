@@ -3,10 +3,11 @@ package ua.cats
 
 
 import grails.converters.JSON
+import sun.plugin2.os.windows.SECURITY_ATTRIBUTES
+
 import static org.springframework.http.HttpStatus.*
 import grails.transaction.Transactional
 
-@Transactional(readOnly = true)
 class UserController {
 
     static allowedMethods = [save: "POST", update: "PUT", delete: "DELETE"]
